@@ -1,0 +1,33 @@
+{
+  "name": "Book_Store_MERN",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "16.13.0"
+  },
+  "scripts": {
+    "dev": "nodemon -r ./config/dotenv app.js",
+    "start": "node app.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": { 
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^1.21.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "dotenv-expand": "^5.1.0",
+    "ejs": "^3.1.2",
+    "email-templates": "^7.0.4",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.5",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.4.6",
+    "nodemon": "^2.0.2",
+    "validator": "^12.2.0"
+  }
+}
